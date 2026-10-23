@@ -1,6 +1,6 @@
 # CHANGELOG
 
-> Adds a **Video Clock Fix** setting for TVs and monitors that show small dots or lines while YM2413 FM is on, and support for the **Olimex RP2040-PICO-PC**.
+> **v0.32.1** adds a PicoNES PCB design with SNES controller ports. The emulator is unchanged from v0.32.
 
 # General Info
 
@@ -8,6 +8,15 @@
 [Binaries for each configuration and PCB design are at the end of this page](#downloads___).
 
 For board-by-board wiring, supported display modes and more refer to the [pico-infonesPlus documentation](https://github.com/PicoPlus-devel/pico-infonesPlus#setup). The set of supported boards and their pinouts is identical between the two projects.
+
+# v0.32.1 Release notes
+
+## What's new
+
+- **PicoNES PCB with SNES controller ports.** PCB design v2.8, designed by John Edgar Park ([@johnedgarpark](https://twitter.com/johnedgarpark)), has two SNES controller ports, so original SNES controllers plug in without an adapter cable. The Gerber file `pico_nesPCB_v2.8_SNES_PORTS.zip` is attached below. See [Custom PCBs](https://github.com/PicoPlus-devel/pico-smsplus#picones-pcb) in the readme.
+- All PCB designs, with parts lists and pictures, are now described in the [PCB README](https://github.com/PicoPlus-devel/pico_shared/blob/main/PCB/README.md).
+
+The binaries are the same as in v0.32.
 
 # v0.32 Release notes
 
@@ -367,7 +376,9 @@ For some configurations risc-v binaries are available. It is recommended however
 | Pico 2 | [picosmsPlus_AdafruitDVISD_pico2_arm.uf2](https://github.com/PicoPlus-devel/pico-smsplus/releases/latest/download/picosmsPlus_AdafruitDVISD_pico2_arm.uf2) | [Readme](https://github.com/PicoPlus-devel/pico-infonesPlus/blob/main/README.md#pcb-with-raspberry-pi-pico-or-pico-2-and-pimoroni-pico-plus-2) |
 | Pico 2 W | [picosmsPlus_AdafruitDVISD_pico2_w_arm.uf2](https://github.com/PicoPlus-devel/pico-smsplus/releases/latest/download/picosmsPlus_AdafruitDVISD_pico2_w_arm.uf2) | [Readme](https://github.com/PicoPlus-devel/pico-infonesPlus/blob/main/README.md#pcb-with-raspberry-pi-pico-or-pico-2-and-pimoroni-pico-plus-2) |
 
-PCB: [pico_nesPCB_v2.6.zip](https://github.com/PicoPlus-devel/pico-smsplus/releases/latest/download/pico_nesPCB_v2.6.zip). [Readme](https://github.com/PicoPlus-devel/pico-smsplus#picones-pcb)
+PCB with NES controller ports: [pico_nesPCB_v2.6.zip](https://github.com/PicoPlus-devel/pico-smsplus/releases/latest/download/pico_nesPCB_v2.6.zip). [Readme](https://github.com/PicoPlus-devel/pico-smsplus#picones-pcb)
+
+PCB with SNES controller ports: [pico_nesPCB_v2.8_SNES_PORTS.zip](https://github.com/PicoPlus-devel/pico-smsplus/releases/latest/download/pico_nesPCB_v2.8_SNES_PORTS.zip). [Readme](https://github.com/PicoPlus-devel/pico-smsplus#picones-pcb)
 
 3D-printed case designs for PCB:
 
@@ -457,6 +468,12 @@ There is no Pico 2 W binary for this board.
 
 Extract the zip file to the root folder of the SD card. Select a game in the menu and press START to show more information and box art. Works for most official released games. Screensaver shows floating random cover art. Works for RP2040 and RP2350.
 Extra on RP2350: when a game is loaded a themed bezel/border is shown.
+
+- PCB Gerber files. Upload the zip file unchanged to a PCB manufacturer. See the [PCB README](https://github.com/PicoPlus-devel/pico_shared/blob/main/PCB/README.md) for parts lists and build instructions.
+  - PicoNES v2.6, NES controller ports: [pico_nesPCB_v2.6.zip](https://github.com/PicoPlus-devel/pico-smsplus/releases/latest/download/pico_nesPCB_v2.6.zip)
+  - PicoNES v2.8, SNES controller ports: [pico_nesPCB_v2.8_SNES_PORTS.zip](https://github.com/PicoPlus-devel/pico-smsplus/releases/latest/download/pico_nesPCB_v2.8_SNES_PORTS.zip)
+  - PicoNES Mini (Waveshare RP2040-Zero / RP2350-Zero): [Gerber_PicoNES_Mini_PCB_v2.0.zip](https://github.com/PicoPlus-devel/pico-smsplus/releases/latest/download/Gerber_PicoNES_Mini_PCB_v2.0.zip)
+  - PicoNES Micro (Waveshare RP2350-USB-A): [Gerber_PicoNES_Micro_v1.2.zip](https://github.com/PicoPlus-devel/pico-smsplus/releases/latest/download/Gerber_PicoNES_Micro_v1.2.zip)
 
 
 
