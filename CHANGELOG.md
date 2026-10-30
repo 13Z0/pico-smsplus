@@ -1,6 +1,6 @@
 # CHANGELOG
 
-> **v0.32.1** adds a PicoNES PCB design with SNES controller ports. The emulator is unchanged from v0.32.
+> **v0.32.2** finds USB controllers at every start on the Adafruit Fruit Jam and other boards with PIO-USB.
 
 # General Info
 
@@ -8,6 +8,12 @@
 [Binaries for each configuration and PCB design are at the end of this page](#downloads___).
 
 For board-by-board wiring, supported display modes and more refer to the [pico-infonesPlus documentation](https://github.com/PicoPlus-devel/pico-infonesPlus#setup). The set of supported boards and their pinouts is identical between the two projects.
+
+# v0.32.2 Release notes
+
+## Fixes
+
+- **USB controllers on the Adafruit Fruit Jam and other boards with PIO-USB are now found at every start.** On boards with an older RP2350 chip they were often not detected.
 
 # v0.32.1 Release notes
 
